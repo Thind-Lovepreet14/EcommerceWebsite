@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 // import components
 import Navbar from "./components/utils/Navbar";
 import Footer from "./components/utils/Footer";
-import ProductsPage from "./components/ProductsPage";
-import ContactsPage from "./components/ContactsPage";
-import HomePage from "./components/HomePage";
+import ProductsPage from "./sitePages/ProductsPage";
+import ContactsPage from "./sitePages/ContactsPage";
+import HomePage from "./sitePages/HomePage";
 
 class App extends React.Component {
   render() {
