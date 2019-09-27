@@ -1,5 +1,7 @@
 import React from 'react';
-import ProductFilter from './ProductFilter';
+import Product from './Product';
+
+
 
 class ProductDataList extends React.Component {
 
@@ -13,7 +15,7 @@ class ProductDataList extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/api/products') //./data/products.json
+        fetch('api/products') //./data/products.json
             .then((res) => res.json())
             .then(
                 (data) => {
@@ -28,17 +30,18 @@ class ProductDataList extends React.Component {
                     error
                 })
             });
-        }
-        
+    }
+
     render() {
         const { error, isLoaded, productsList } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
             return <div>Loading...</div>;
-        } else {
+        }
+         else {
             return (
-                <ProductFilter products={productsList} />
+                <Product productsList={this.state.productsList}/>
             );
         }
     }

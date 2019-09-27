@@ -27,8 +27,8 @@ const SecondContainer = () => {
                         </a>
                         {/* Image Thumbnails Below Video  */}
                         <div className="d-flex">
-                            <a href="/product" className="thumb img"><img height="200" width="200" className="img-fluid img-thumbnail" alt="rack of clothes"
-                                src="../images/tshirt-home.jpeg" /> </a>
+                            <a href="/product" className="thumb img"><img height="200" width="200" className="img-fluid img-thumbnail" alt="woman using dumbbells"
+                                src="../images/woman_workout.jpg" /> </a>
                             <a href="/product" className="thumb img"><img height="200" width="200" className="img-fluid img-thumbnail" alt="runner"
                                 src="../images/pants_thumbnail.jpg" /></a>
                             <a href="/product" className="thumb img"><img height="200" width="200" className="img-fluid img-thumbnail" alt="yoga"
