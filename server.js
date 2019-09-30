@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const path = require('path')
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 4000;
 
 
 const productsAPI = require("./routes/productsAPI")
@@ -17,7 +17,7 @@ if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
 }
 
-app.use("/api", productsAPI)
+app.use('/api', productsAPI)
 app.use('/api', contactsAPI)
 app.use('/api', products_idAPI)
 app.use('/api', productFilterAPI)

@@ -24,10 +24,10 @@ VALUES ("Kyrie Nike Dri-FIT 'Friends'", "mens", "Men's Basketball T-Shirt", "./i
         ("San Antonio Spurs Nike Therma Flex Showtime", "mens", "Men's NBA Pants","./images/product-spurs.jpg"),
         ("UA Sportstyle Pique", "mens", "Men's Pants","./images/product-ua-sportstyle.jpg"),
         ("Men’s Speed Pants", "mens", "Men's Pants","./images/product-puma-speed.jpg"),
-        ("Believe This High Rise 7/8 Tights", "womens", "Women's Training","./images/product-believe.jpg"),
-        ("UA Play Up 3.0 Twist","womens", "Women's Shorts","./images/product-us-play.jpeg"),
-        ("Studio Mesh Women's Tank", "womens", "Women's Tank Top","./images/product-mesh-studio.jpg"),
-        ("Wanderlust Warp Knit Crop Top", "womens", "Women's Training","./images/product-wanderlust.webp");
+        ("Believe This High Rise 7/8 Tights", "womans", "Women's Training","./images/product-believe.jpg"),
+        ("UA Play Up 3.0 Twist","womans", "Women's Shorts","./images/product-us-play.jpeg"),
+        ("Studio Mesh Women's Tank", "womans", "Women's Tank Top","./images/product-mesh-studio.jpg"),
+        ("Wanderlust Warp Knit Crop Top", "womans", "Women's Training","./images/product-wanderlust.webp");
         
         
 SELECT * FROM products;

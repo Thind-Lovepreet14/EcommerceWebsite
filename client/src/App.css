@@ -366,6 +366,41 @@ footer {
   float: right;
 }
 
+/* product-btn */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin:10px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+.productbtn {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-family: 'Suez One', serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #fcd307;
+  color: #fcd307;
+}
+
+textarea:focus, .btn-active:focus {
+  outline: none;
+  background-color: #fcd307;
+  color: white;
+}
+
+.productbtn:hover {
+    background-color: #fcd307;
+    color: white;
+}
+
+
+
 /* Contact Page */
 .hero-contact{
   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2695&q=80");
