@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Turn to functional component
 class VideoContainer extends React.Component {
     render() {
         return (

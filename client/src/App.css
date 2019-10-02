@@ -409,6 +409,7 @@ textarea:focus, .btn-active:focus {
   background-attachment: fixed;
   /* height:100vh; */
   text-align: center;
+  padding-bottom: 100px;
 }
 .hero-contact h1{
   padding-top:50vh;
@@ -426,3 +427,43 @@ textarea:focus, .btn-active:focus {
   padding:0;
 }
 
+/* Contact Comments */
+.comment-column {
+  border: 1px solid transparent;
+
+}
+.row{
+  margin-right: 0px;
+}
+.comment-column:hover {
+  border:1px solid#fcd307;
+}
+
+.comment-description {
+  color: #6d6d6d;
+}
+
+.comment-name {
+  color: black;
+  font-weight: bold;
+}
+
+/* Contact Slider */
+.slider-container{
+  background: #F7F7F7;
+  height:22vh;
+}
+
+.slick-slider{
+  width:90%;
+  margin:auto;
+
+}
+
+.slick-dots li button{
+  color:white;
+}
+
+.slick-prev:before, .slick-next:before {
+  color:#fcd307 !important;
+}

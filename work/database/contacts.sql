@@ -23,6 +23,6 @@ VALUES
 ('Emilia', 'Elgood', 'eelgood5@npr.org', 'first!'),
 ('Tami', 'Rontree', 'trontreec@homestead.com', 'I really enjoyed browsing the 4 womens products you have available.');
 
-SELECT * FROM contacts;
+SELECT * FROM contacts;	
 
  
