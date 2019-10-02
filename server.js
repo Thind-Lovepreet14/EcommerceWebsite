@@ -10,8 +10,8 @@ const morgan = require('morgan')
 app.use(express.urlencoded({ extended:true }));
 app.use(express.json());
 
-app.use(helmet())
-app.use(morgan())
+app.use(helmet()) //security
+app.use(morgan()) //logs every request
 
 
 const productsAPI = require("./routes/productsAPI")
