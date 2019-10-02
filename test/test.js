@@ -1,37 +1,73 @@
-const expect = require('chai').expect;
+const chai = require('chai')
+const expect = chai.expect;
+const chaiHttp = require('chai-http');
 const request = require('request');
 
-it('Checks if contact endpoint is functional', function(done) {
-    request('http://localhost:4000/api/contacts', function(error, response, body) {
-        expect(response.statusCode).to.equal(200);
-        done()
-    });
-})
+const app = require('../server')
 
-it('returns the correct product by product_id', function(done) {
-    request('http://localhost:4000/api/products/5', function(error,response,body) {
-        expect(body).to.equal(`{"product_id":5,"product_name":"Tiro 19 Training Pants","product_type":"mens","product_category":"Men's Soccer","image":"./images/product-tiro.jpg"}`)
-        done()
+
+chai.use(chaiHttp)
+chai.should()
+
+
+
+// it('Checks if contact endpoint is functional', function(done) {
+//     request('http://localhost:4000/api/contacts', function(error, response, body) {
+//         expect(response.statusCode).to.equal(200);
+//         done()
+//     });
+// })
+
+
+
+describe('Tests for "/api/products" api endpoint', () => {
+    it('should send 200 status code', (done) => {
+        chai.request(app)
+        .get('/api/products')
+        .end((err, res) => {
+            // console.log('response -', response.body)
+            res.should.have.status(200);
+            res.body.should.be.a('array');
+            done();
+        })
     })
 })
 
-it('Checks if root endpoint is functional', function(done) {
-    request('http://localhost:4000/api/', function(error, response, body) {
-        expect(response.statusCode).to.equal(200);
-        done()
-    });
+describe('Tests for "/" endpoint', () => {
+    it('should send 200 status code', (done) => {
+        chai.request(app)
+        .get('/')
+        .end((error, res) => {
+            // console.log('response -', response.body)
+            res.should.have.status(200);
+            res.body.should.be.a('object');
+            done();
+        })
+    })
 })
 
-it('Checks if product endpoint is functional', function(done) {
-    request('http://localhost:4000/api/products', function(error, response, body) {
-        expect(response.statusCode).to.equal(200);
-        done()
-    });
+describe('Tests for "/api/contacts" api endpoint', () => {
+    it('should send 200 status code', (done) => {
+        chai.request(app)
+        .get('/api/contacts')
+        .end((error, res) => {
+            // console.log('response -', response.body)
+            res.should.have.status(200);
+            res.body.should.be.a('array');
+            done();
+        })
+    })
 })
 
-it('Checks if product endpoint is functional', function(done) {
-    request('http://localhost:4000/api/productFilter', function(error, response, body) {
-        expect(response.statusCode).to.equal(200);
-        done()
-    });
+describe('Tests for "/api/productFilter" endpoint', () => {
+    it('should send 200 status code', (done) => {
+        chai.request(app)
+        .get('/api/productFilter')
+        .end((error, res) => {
+            // console.log('response -', response.body)
+            res.should.have.status(200);
+            res.body.should.be.a('array');
+            done();
+        })
+    })
 })
