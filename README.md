@@ -1,5 +1,5 @@
 # Ecommerce Website (Run4It)
-This project is an ecommerce website centered around athletic apparel. It contains three pages routed together through react. The home page has slider images. The product page contains products, pulled from a MySQL database, that allows a user to filter by product type and price. The contact page has a form that dynamically adds the comment to the comment slider so users can see their comments. React and MySQL is linked together through Node.js.
+This project is an ecommerce website centered around athletic apparel. It contains three pages routed together through react. The home page has slider images. The product page contains products, pulled from a MySQL database, that allows a user to filter by product type and price. The contact page has a form that dynamically adds the comment to the comment slider so users can see their comments. React and MySQL is linked together through Express.
 
 ## Getting Started
 
@@ -13,15 +13,15 @@ This project is an ecommerce website centered around athletic apparel. It contai
 
 ### Built With
 
-*[React](https://reactjs.org/docs/getting-started.html)
-*[Express](https://expressjs.com/)
-*[MySQL](https://dev.mysql.com/doc/)
+* [React](https://reactjs.org/docs/getting-started.html) - JavaScript library for building user interfaces
+* [Express](https://expressjs.com/) - Server framework for Node.js
+* [MySQL](https://dev.mysql.com/doc/) - Relational database management system
 
 ## Running the Tests
 Use `npm test` from the root directory.
 
 ## Author
-*[Lovepreet Thind](https://github.com/Thind-Lovepreet14)
+* [Lovepreet Thind](https://github.com/Thind-Lovepreet14)
 
 ## License
 
