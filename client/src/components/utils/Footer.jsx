@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div className="footer-copyright text-center py-3 copyrightText">
                 <p>© 2019 Copyright</p>
-                <p>Last Updated August 2019</p>
+                <p>Last Updated October 2019</p>
             </div>
         </footer>
     )

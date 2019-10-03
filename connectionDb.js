@@ -1,5 +1,6 @@
-const mysql = require('mysql');
+const mysql = require('mysql'); //node.js driver for mysql that creates a connection to mysql
 
+//creating the connection to the database
 const connection = mysql.createConnection({
     host: 'localhost',
     port: 3306,
@@ -8,6 +9,7 @@ const connection = mysql.createConnection({
     database: 'run4it_db'
 });
 
+//get the MySQL connection ID ("thread ID") of a given connection
 connection.connect(function(err) {
     if (err) throw err;
     console.log('connected as id' + connection.threadId);
@@ -16,4 +18,5 @@ connection.connect(function(err) {
     // })
 });
 
+//exporting connection to use in other APIs
 module.exports = connection

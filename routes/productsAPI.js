@@ -1,5 +1,5 @@
-const router = require('express').Router()
-const connection = require('../connectionDb')
+const router = require('express').Router() //router is code that runs your routes. router is what actually invokes the callback function to process the request.
+const connection = require('../connectionDb') //creating a connection to MySQL database
 
 //fetch all products
 router.get('/products', (req, res) => {

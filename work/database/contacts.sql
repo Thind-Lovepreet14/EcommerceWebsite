@@ -12,16 +12,16 @@ CREATE TABLE contacts
        
 INSERT INTO contacts(contact_fname, contact_lname, contact_email, contact_comment)
 VALUES
-('Basilio', 'Dealy', 'bdealy0@paypal.com', "I purchased the spurs sweatpants. They're overpriced and bad'"),
-('Greg', 'Sawdy' , 'gsawdy1@bloglovin.com', "I found the spurs sweatpants wonderful and not at all overpriced."),
-('Eric', 'Lampett', 'elampett2@bloglines.com', "I don't even like sports apparal."),
-('Jessica', 'Souch', 'jsouch3@epa.gov', "Your women's selection is bad and you should feel bad"),
+('Basilio', 'Dealy', 'bdealy0@paypal.com', "I purchased the spurs sweatpants. They're awesome'"),
+('Greg', 'Sawdy' , 'gsawdy1@bloglovin.com', "This website's AMAZING!!"),
+('Eric', 'Lampett', 'elampett2@bloglines.com', "I love Kyrie"),
+('Jessica', 'Souch', 'jsouch3@epa.gov', "Please add more women's apparel"),
 ('Daven', 'Nannizzi', 'dnannizzi4@blogger.com', "The video background is amazing!!"),
 ('Dean', 'Aughton', 'daughton5@hugedomains.com', "I liked the Steady Freddy t"),
-('Becca', 'Spittles', 'bspittlesc@etsy.com', "All your stuff is ripped off nike. What is the point of this?"),
+('Becca', 'Spittles', 'bspittlesc@etsy.com', "Try to bring in more Under Armour clothes"),
 ('Natalia', 'Beneyto', 'nbeneyto8@google.es	', "I dig these pants"),
-('Emilia', 'Elgood', 'eelgood5@npr.org', 'first!'),
-('Tami', 'Rontree', 'trontreec@homestead.com', 'I really enjoyed browsing the 4 womens products you have available.');
+('Emilia', 'Elgood', 'eelgood5@npr.org', 'Fantastic!'),
+('Tami', 'Rontree', 'trontreec@homestead.com', 'I really enjoyed browsing this website.');
 
 SELECT * FROM contacts;	
 
