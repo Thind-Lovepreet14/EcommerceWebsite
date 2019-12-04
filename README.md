@@ -12,7 +12,12 @@ This project is an e-commerce website centered around athletic apparel. It conta
 4. Use `npm start` to start the application from the root directory.
 
 ## Preview of Application
+
+### Home Page
 ![](work/preview/homePage.gif)
+
+### Product Page
+![](work/preview/productPage.gif)
 
 ### Built With
 
