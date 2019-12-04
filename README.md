@@ -19,6 +19,9 @@ This project is an e-commerce website centered around athletic apparel. It conta
 ### Product Page
 ![](work/preview/productPage.gif)
 
+### Contact Page
+![](work/preview/contactPage.gif)
+
 ### Built With
 
 * [React](https://reactjs.org/docs/getting-started.html) - JavaScript library for building user interfaces
